@@ -1,0 +1,41 @@
+<div class="registration">
+    <div class="my-account">
+        <div class="register-form" layout="column" layout-align="center center" >
+            <div class="row">
+                <div class="col-md-6 col-sm-8 col-lg-4" layout="column">
+                    <img src="../images/noavatar.png" width="230px" height="230px" alt="">
+                    <label for="firstName">LOGIN</label>
+                    <input name="firstName"
+                           class="form-control"
+                           ng-model="registrationCtrl.login"
+                           type="text"
+                           required
+                           autofocus>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 col-sm-8 col-lg-4">
+                    <label for="password">PASSWORD</label>
+                    <input name="password"
+                           class="form-control"
+                           ng-model="registrationCtrl.password"
+                           type="password"
+                           required>
+                </div>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="col-md-6 col-sm-6 col-xs-6 col-lg-6">
+                    <button class="btn btn-default regbutton"
+                            ng-click="registrationCtrl.register()">Register
+                    </button>
+
+                </div>
+                <div class="col-md-6 col-sm-6 col-xs-6 col-lg-6">
+                    <button class="btn btn-default logbutton">Sign in</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--</div>-->

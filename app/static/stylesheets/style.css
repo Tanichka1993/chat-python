@@ -1,0 +1,265 @@
+main {
+    padding: 50px;
+    height: 100%;
+
+}
+
+.wrap {
+    width: 100%;
+    height: 700px;
+    background: url("../images/mybgr.png");
+    background-size: cover;
+    border-radius: 30px;
+}
+
+.main_content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+body, html {
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 18px;
+    background-image: url("../images/polygon-background-6912.jpeg");
+    scrollbar-3dlight-color: white;
+    scrollbar-arrow-color: white;
+}
+
+.registration {
+    padding: 25px;
+
+}
+
+.registration.register-form {
+    border-radius: 2%;
+    position: absolute;
+}
+
+.registration .register-form {
+    font-size: 16px;
+}
+
+.registration .register-form label {
+    color: aliceblue;
+
+}
+
+.registration .register-form input {
+    padding: 15px;
+    margin: 15px;
+    width: 200px;
+    height: 40px;
+    border-radius: 10px;
+}
+
+.registration .regbutton {
+    height: 50px;
+    width: 100px;
+    background-color: darkgrey;
+    border-radius: 10px;
+    font-size: 18px;
+    color: white;
+    border: none !important;
+    margin-bottom: 5px;
+    background-image: inherit;
+}
+
+.registration .regbutton:hover {
+    color: white;
+    background-color: lightgrey;
+}
+
+.registration .regbutton:active {
+    color: blanchedalmond;
+    background-color: white;
+}
+
+.registration .logbutton {
+    height: 50px;
+    width: 100px;
+    background-color: darkorange;
+    border-radius: 10px;
+    font-size: 18px;
+    color: white;
+    border: none !important;
+    margin-bottom: 5px;
+    background-image: inherit;
+}
+
+.registration .logbutton:hover {
+    color: white;
+    background-color: orange;
+}
+
+.registration .logbutton:active {
+    color: white;
+    background-color: darkolivegreen;
+}
+
+.registration .row {
+    margin: 0;
+
+}
+
+.my-account {
+    background-color: rgba(235, 233, 233, 0.7);
+    /*background: url("../images/mybgr2.jpg");*/
+    border-radius: 10px;
+    padding: 10px;
+    margin: 30px;
+}
+
+.wrap_messages {
+    margin: 50px;
+    padding: 10px;
+    min-height: 400px;
+}
+
+.wrap_messages .messages {
+    overflow: auto;
+    border: 2px solid white;
+    border-radius: 138px 161px 178px 0;
+    background-color: rgba(235, 233, 233, 0.7);
+}
+
+.wrap_messages .send-message-box {
+    margin: 10px;
+}
+
+.wrap_messages .first-block {
+    position: absolute;
+    width: 200px;
+    height: 60px;
+    background-color: white;
+    border-radius: 200px 43px 43px 200px;
+    padding: 5px;
+}
+
+.wrap_messages .md-list-item-text p {
+    font-style: normal;
+    font-size: medium;
+    background-color: rgba(255, 165, 0, 0.7);
+    /*background-color: rgba(241, 105, 8, 0.9);*/
+    border-radius: 138px 161px 178px 0;
+    min-height: 41px;
+    width: 90%;
+    padding-left: 50px;
+}
+
+.wrap_messages .md-list-item-text div {
+    line-height: 22px;
+    width: 150px;
+    text-align: center;
+    font-family: Ubuntu, fantasy;
+}
+
+.listdemoBasicUsage md-divider {
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+
+.md-content.md-default-theme, md-content {
+    background-color: inherit;
+}
+
+md-content._md {
+    width: 100%;
+    margin: 20px;
+    border-radius: 138px 161px 178px 0;
+}
+
+.md-list-item-inner {
+    padding: 25px;
+}
+
+#text input {
+    border-radius: 30px;
+    color: black;
+    padding: 10px;
+    background-color: lightgrey;
+    border: 2px solid white;
+}
+
+#text button {
+    background-color: darkorange;
+    border-radius: 30px;
+    width: 100px;
+    padding: 10px;
+    margin-left: 10px;
+    border: 2px solid blanchedalmond;
+}
+
+#text button span {
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+    font-size: 18px;
+    color: white;
+}
+
+.md-list-item-text {
+    position: relative;
+    left: 50px;
+}
+
+.home-page {
+    height: 100%;
+}
+
+
+
+@media (max-width: 1100px) {
+    .wrap_messages .messages {
+        border-radius: 10px;
+    }
+    md-content._md {
+        border-radius: 10px;
+    }
+    div.first-block{
+        padding: 0;
+    }
+    .wrap_messages.layout-column.flex{
+        height: 600px;
+    }
+}
+@media (max-width: 960px) {
+    .wrap_messages .messages {
+        border-radius: 0;
+    }
+    md-content._md {
+        border-radius: 0;
+    }
+    div.first-block{
+        padding: 0;
+    }
+    .wrap_messages.layout-column.flex{
+        height: 600px;
+    }
+
+}
+
+@media (max-width: 768px) {
+    .wrap_messages .messages {
+        border-radius: 0;
+    }
+    md-content._md {
+        border-radius: 0;
+    }
+}
+@media (max-width: 620px) {
+    .wrap_messages .messages {
+        border-radius: 0;
+    }
+    md-content._md {
+        border-radius: 0;
+    }
+}
+@media (max-width: 480px) {
+    .wrap_messages .messages {
+        border-radius: 10px;
+        padding: 0;
+        margin: 0;
+    }
+    md-content._md {
+        border-radius: 0;
+    }
+}

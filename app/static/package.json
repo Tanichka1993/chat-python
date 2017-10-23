@@ -1,0 +1,27 @@
+{
+  "name": "chat",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "angular": "^1.6.6",
+    "angular-animate": "^1.6.6",
+    "angular-aria": "^1.6.6",
+    "angular-carousel": "^1.1.0",
+    "angular-material": "^1.1.5",
+    "angular-messages": "^1.6.6",
+    "angular-route": "^1.6.6",
+    "angular-touch": "^1.6.6",
+    "bootstrap": "^3.3.7",
+    "jquery": "^3.2.1",
+    "restangular": "^1.6.1",
+    "ubuntu-fontface": "^0.1.13",
+    "underscore": "^1.8.3"
+  },
+  "keywords": [],
+  "description": ""
+}
