@@ -17,6 +17,13 @@ def jsonify_as_dict(data):
         return jsonify([element._asdict() for element in data])
 
 
+def bot_message_handler(new_message):
+    if new_message.lower() == 'Hello, bot!'.lower():
+        db.session.add(Message(sender_id=2, text_message='Hi human!'))
+    if new_message.lower() == 'How are you, bot?'.lower():
+        db.session.add(Message(sender_id=2, text_message="I'm fine, and you?"))
+
+
 @api_module.route('/messages', methods=['GET'])
 def get_messages():
     return jsonify_as_dict(Message.query.all())
@@ -36,10 +43,11 @@ def add_message():
         return abort(status.HTTP_400_BAD_REQUEST)
     else:
         db.session.add(Message(sender_id=1, text_message=request.json['text_message']))
+        bot_message_handler(request.json['text_message'])
         db.session.commit()
         return 'Created', status.HTTP_201_CREATED
 
 
 @api_module.route('/users', methods=['GET'])
 def get_users():
-    return jsonify_as_dict(User.query.all())
+    return jsonify_as_dict(db.session.query(User.id, User.login).all())
